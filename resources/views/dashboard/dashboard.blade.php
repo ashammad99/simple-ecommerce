@@ -1,0 +1,14 @@
+@extends('layouts.app')
+@section('page-content-title')
+    Products
+@endsection
+@section('page-breadcrumb')
+    Products
+@endsection
+@section('content')
+    <table>
+        <tr>
+            <td>Hello</td>
+        </tr>
+    </table>
+@endsection
