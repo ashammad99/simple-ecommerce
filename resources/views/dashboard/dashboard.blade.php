@@ -6,9 +6,5 @@
     Products
 @endsection
 @section('content')
-    <table>
-        <tr>
-            <td>Hello</td>
-        </tr>
-    </table>
+Dashboard
 @endsection
