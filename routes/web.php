@@ -14,8 +14,10 @@ Route::get('/dashboard', function () {
 Route::get('/', [ShopController::class,'index']);
 
 
-Route::resource('dashboard/products',\App\Http\Controllers\ProductController::class);
-Route::resource('dashboard/categories',\App\Http\Controllers\CategoryController::class);
+Route::resource('dashboard/products',\App\Http\Controllers\ProductController::class)
+    ->middleware(['auth', 'verified']);
+Route::resource('dashboard/categories',\App\Http\Controllers\CategoryController::class)
+    ->middleware(['auth', 'verified']);
 
 
 Route::middleware('auth')->group(function () {
